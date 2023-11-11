@@ -46,7 +46,7 @@ section {
     z-index: 100;
 }
 
-.header.stickey {
+.header.sticky {
     border-bottom: .1rem solid rbga(0, 0, 0, .2);
 }
 
@@ -378,4 +378,40 @@ span {
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
+}
+
+/*------------------------------------------ BREACKING POINTS --------------------*/
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
 }
