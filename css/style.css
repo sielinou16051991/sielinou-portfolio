@@ -81,8 +81,9 @@ section {
     align-items: center;
 }
 
-.home-img {
+.home-img img{
     width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
 }
 .home-content h3 {
     font-size: 3.2rem;
@@ -405,6 +406,10 @@ span {
         padding-bottom: 7rem;
     }
 
+    .contact {
+        min-height: auto;
+    }
+
     .footer {
         padding: 2rem 3%;
     }
@@ -468,4 +473,32 @@ span {
         }
     }
     */
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vh;
+    }
+
+    .about-img img {
+        width: 90vh;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
