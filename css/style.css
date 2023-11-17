@@ -397,6 +397,7 @@ span {
 /*------------------------------------------ BREACKING POINTS --------------------*/
 
 @media (max-width: 1200px) {
+    
     html {
         font-size: 55%;
     }
@@ -405,10 +406,18 @@ span {
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     section {
+        background: red;
         padding: 10rem 3% 2rem;
+        width: 90%;
+        border-radius: 50px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .services {
@@ -425,13 +434,18 @@ span {
 
     .footer {
         padding: 2rem 3%;
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
     }
+    
 }
 
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
     }
+    
     .navbar {
         position: absolute;
         top: 100%;
