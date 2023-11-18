@@ -24,12 +24,12 @@
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
 
-        <i class="bx bx-menu" id="bx-menu"></i>
+        <i class="bx bx-menu" id="menu-icon"></i>
         <!-- <i class="bx bx-x" id="bx-x" ></i> -->
 
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
+            <a href="#home" class="active">Accueil</a>
+            <a href="#about">Apropos</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
@@ -39,11 +39,10 @@
     <!--    home section    -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3> Hellow It's Me</h3>
+            <h3> Salut! c'est moi!</h3>
             <h1>SIELINOU NOUBISSIE ERIC ROMUALD</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi aspernatur placeat
-                architecto amet laudantium id.
+            <p>Vous pouvez me joindre sur les médias suivant
             </p>
             <div class="social-media">
                 <a href="#"><i class="bx bxl-facebook"></i></a>
@@ -102,34 +101,34 @@
 
             <div class="services-box">
                 <i class="bx bx-code-alt"></i>
-                <h3>Web Developement</h3>
+                <h3>Developement Web</h3>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi aspernatur placeat
-                    architecto amet laudantium id.
+                    Jeune développeur web passionné, offrant des compétences 
+                    émergentes pour la création de sites interactifs et la résolution de problèmes.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn">Voir plus</a>
             </div>
 
 
             <div class="services-box">
                 <i class="bx bxs-paint"></i>
-                <h3>Graphic Design</h3>
+                <h3>Graphiste</h3>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi aspernatur placeat
-                    architecto amet laudantium id.
+                    débutant, passionné par la création visuelle, 
+                    offrant des designs créatifs et uniques pour divers besoins artistiques
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn">Voir plus</a>
             </div>
 
 
             <div class="services-box">
                 <i class="bx bx-bar-chart-alt"></i>
-                <h3>Digital Marketing</h3>
+                <h3>UI/UX Desiner</h3>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam, modi aspernatur placeat
-                    architecto amet laudantium id.
+                    Jeune talent UI/UX offrant des designs intuitifs, centrés sur l'utilisateur, 
+                    et des expériences visuelles engageantes pour votre projet.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn">Voir plus</a>
             </div>
 
         </div>
@@ -138,8 +137,8 @@
     <!--    portfolio section design    -->
 
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <h3 class="heading">Treaning <span>Project</span></h3>
+        <h2 class="heading">Mes dernier <span>Projets</span></h2>
+        <h3 class="heading">Mes projets <span>Personnel</span></h3>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
@@ -199,15 +198,15 @@
         <h2 class="heading">Cantact <span>Me !</span></h2>
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="mail" placeholder="Email Address">
+                <input type="text" id="FullName" placeholder="Full Name">
+                <input type="mail" id="EmailAddress" placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" id="MobileNumber" placeholder="Mobile Number">
+                <input type="text" id="EmailSubject" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="" id="YourMessage" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" onclick="SendEmail()" value="Send Message" class="btn">
         </form>
     </section>
 
@@ -229,6 +228,11 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src="js/script.js"></script>
+
+    <!--    send mail use smtp.js  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/smtpToSendEmail.js"></script>
+
 </body>
 
 </html>
