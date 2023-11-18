@@ -28,21 +28,21 @@
         <!-- <i class="bx bx-x" id="bx-x" ></i> -->
 
         <nav class="navbar">
-            <a href="#home" class="active">Accueil</a>
-            <a href="#about">Apropos</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="active" id="Accueil"></a>
+            <a href="#about" id="Apropos_1"></a>
+            <a href="#services" id="Services_1"></a>
+            <a href="#portfolio" id="Portfolio_1"></a>
+            <a href="#contact" id="Contact_1"></a>
         </nav>
     </header>
 
     <!--    home section    -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3> Salut! c'est moi!</h3>
-            <h1>SIELINOU NOUBISSIE ERIC ROMUALD</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Vous pouvez me joindre sur les médias suivant
+            <h3 id="SALUT"> </h3>
+            <h1 id="NOM_PRENOM"></h1>
+            <h3 id="JE_SUIS"> <span class="multiple-text"></span></h3>
+            <p id="RESAU_SOCIAL">
             </p>
             <div class="social-media">
                 <a href="#"><i class="bx bxl-facebook"></i></a>
@@ -50,7 +50,7 @@
                 <a href="#"><i class="bx bxl-instagram"></i></a>
                 <a href="#"><i class="bx bxl-linkedin"></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="#" class="btn" id="CV"></a>
         </div>
 
         <div class="home-img">
@@ -64,71 +64,57 @@
             <img src="images/about-img.jpg" alt="">
         </div>
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer</h3>
-            <p>
-                Jeune professionnel passionné par son travail, doté d’un grand sens de l’organisation et
-                m’adaptant facilement à
-                différents environnements et faisant preuve de détermination dans la réalisation de mes
-                objectifs. Je souhaite
-                m’impliquer dans un nouveau projet au sein d’une
-                organisation dynamique et ambitieuse
+            <div class="title-portfolio-container">
+                <h2 class="heading" id="Apropos_2"> </h2>
+                <span id="MOI"></span>
+            </div>
+            <h3 id="Frontend_Developer"></h3>
+            <p id="DEMARQUATION">
+
 
             </p>
-            <p>
-                Je suis un développeur frontend avec une maîtrise en Système d'Information et
-                Génie Logiciel obtenue à l'Université de Yaoundé 1 en 2022. Depuis le 8 août 2022,
-                je fais partie de l'équipe d'Advance-it, une entreprise innovante où j'ai eu l'opportunité
-                de travailler sur des projets d'envergure. Parmi mes réalisations figurent des logiciels de
-                gestion tels que "AURORE SIC" pour les établissements scolaires, "AURORE HIS" pour les
-                hôpitaux, et "DIGEST" pour la gestion bancaire, qui sont actuellement en production.
-                Au fil de ces expériences, j'ai développé une solide expertise dans des langages tels que
-                HTML5, Sass, Less et JavaScript. Mon framework de prédilection est Angular, et j'ai
-                également une maîtrise de React en tant que framework secondaire. De plus, j'ai acquis des
-                compétences dans la conception d'états imprimables grâce à l'outil de reporting Jasper
-                Report. Mon parcours professionnel m'a permis de devenir un développeur frontend
-                polyvalent, prêt à relever de nouveaux défis et à apporter des solutions créatives dans le
-                monde de la programmation web.
+            <p id="PARCOURS">
+
             </p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn" id="VOIR_PLUS_1"></a>
         </div>
     </section>
 
     <!--    service section design    -->
     <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="title-portfolio-container">
+            <h2 class="heading" id="Mes"> </h2>
+            <span id="Services_2"></span>
+        </div>
         <div class="services-container">
 
             <div class="services-box">
                 <i class="bx bx-code-alt"></i>
-                <h3>Developement Web</h3>
-                <p>
-                    Jeune développeur web passionné, offrant des compétences 
-                    émergentes pour la création de sites interactifs et la résolution de problèmes.
+                <h3 id="Developement_Web"></h3>
+                <p id="JEUNE_DEV_1">
+
                 </p>
-                <a href="#" class="btn">Voir plus</a>
+                <a href="#" class="btn" id="VOIR_PLUS_2"></a>
             </div>
 
 
             <div class="services-box">
                 <i class="bx bxs-paint"></i>
-                <h3>Graphiste</h3>
-                <p>
-                    débutant, passionné par la création visuelle, 
-                    offrant des designs créatifs et uniques pour divers besoins artistiques
+                <h3 id="Graphiste"></h3>
+                <p id="DEBUTANT">
+
                 </p>
-                <a href="#" class="btn">Voir plus</a>
+                <a href="#" class="btn" id="VOIR_PLUS_3"></a>
             </div>
 
 
             <div class="services-box">
                 <i class="bx bx-bar-chart-alt"></i>
-                <h3>UI/UX Desiner</h3>
-                <p>
-                    Jeune talent UI/UX offrant des designs intuitifs, centrés sur l'utilisateur, 
-                    et des expériences visuelles engageantes pour votre projet.
+                <h3 id="UI_UX"></h3>
+                <p id="JEUNE_TALENT">
+
                 </p>
-                <a href="#" class="btn">Voir plus</a>
+                <a href="#" class="btn" id="VOIR_PLUS_4"></a>
             </div>
 
         </div>
@@ -137,16 +123,23 @@
     <!--    portfolio section design    -->
 
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Mes dernier <span>Projets</span></h2>
-        <h3 class="heading">Mes projets <span>Personnel</span></h3>
+        <h2 class="heading" id="Mes_dernier"> <span id="Projets_1"></span></h2>
+        <div class="title-portfolio-container">
+            <h2 class="heading" id="Mes_dernier"> </h2>
+            <span id="Projets_1"></span>
+        </div>
+        <div class="title-portfolio-container">
+            <h3 class="heading" id="Mes_projets"> </h3> 
+            <span id="Personnel"></span>
+        </div>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
                 <img src="images/img-portfolio/portfolio_booki.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>
-                        Site de presentation des hébergements et activitées
+                    <h4 id="Web_Design_1"></h4>
+                    <p id="HEBERGEMENT">
+
                     </p>
                     <a href="https://sielinou16051991.github.io" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
@@ -155,9 +148,9 @@
             <div class="portfolio-box">
                 <img src="images/img-portfolio/portfolio_ohmyfood.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>
-                        Site de presentation des hébergements et activitées
+                    <h4 id="Web_Design_2"></h4>
+                    <p id="RESTEAURANT">
+
                     </p>
                     <a href="https://sielinou16051991.github.io/projet2HtmlCss" target="_blank"><i
                             class="bx bx-link-external"></i></a>
@@ -167,9 +160,9 @@
             <div class="portfolio-box">
                 <img src="images/img-portfolio/portfolio_photographes.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>
-                        Site de presentation des hébergements et activitées
+                    <h4 id="Web_Design_3"></h4>
+                    <p id="PHOTOGRAPHE">
+
                     </p>
                     <a href="https://sielinou16051991.github.io/projet-3-html-css-js" target="_blank"><i
                             class="bx bx-link-external"></i></a>
@@ -179,23 +172,31 @@
             <div class="portfolio-box">
                 <img src="images/img-portfolio/portfolio_les_petits_plats.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>
-                        Site de presentation des hébergements et activitées
+                    <h4 id="Web_Design_4"></h4>
+                    <p id="PETITS_PLATS">
+
                     </p>
                     <a href="https://sielinou16051991.github.io/projet-4-js-bootstrapp-5" target="_blank"><i
                             class="bx bx-link-external"></i></a>
                 </div>
             </div>
         </div>
-        <h3 class="heading">Professional <span>Project</span></h3>
+        <div class="title-portfolio-container">
+            <h3 class="heading" id="PROJET"> </h3>
+            <span id="PROFESSIONNEL"></span>
+        </div>
         <div class="portfolio-container">
 
         </div>
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Cantact <span>Me !</span></h2>
+        
+        <div class="title-portfolio-container">
+            <h2 class="heading" id="CONTACT_FORM"> </h2>
+            <span id="Me_"></span>
+        </div>
+        
         <form action="#">
             <div class="input-box">
                 <input type="text" id="FullName" placeholder="Full Name">
@@ -209,6 +210,11 @@
             <input type="submit" onclick="SendEmail()" value="Send Message" class="btn">
         </form>
     </section>
+
+    <div class="interrnationnalisation">
+        <button onclick="changeLanguage('fr')" id="Français"></button>
+        <button onclick="changeLanguage('en')" id="English"></button>
+    </div>
 
     <!--    footer design   -->
     <footer class="footer">
@@ -228,6 +234,9 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src="js/script.js"></script>
+
+    <!--    Internationnalisation  -->
+    <script src="js/internationnalisation.js"></script>
 
     <!--    send mail use smtp.js  -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
