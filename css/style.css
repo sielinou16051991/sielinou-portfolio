@@ -158,7 +158,7 @@ span {
 }
 
 #CV {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
 }
 
 .about {
@@ -378,7 +378,7 @@ span {
     cursor: pointer;
 }
 
-.interrnationnalisation {
+.internationnalisation {
     background: var(--second-bg-color);
     display: flex;
     flex-direction: column;
@@ -391,15 +391,15 @@ span {
     border-radius: 5px 5px 0 0;
 }
 
-.interrnationnalisation button {
+.internationnalisation button {
     border: none;
     background-color: transparent;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     overflow-x: hidden;
 }
-.interrnationnalisation :nth-child(1) {
+.internationnalisation :nth-child(1) {
     margin-bottom: .5rem;
 }
 .footer {
@@ -462,6 +462,10 @@ span {
     .contact {
         min-height: auto;
     }
+    .internationnalisation {
+        left: 80%;
+        width: 20%;
+    }
 
     .footer {
         padding: 2rem 3%;
@@ -521,6 +525,10 @@ span {
     .portfolio h2 {
         margin-bottom: 3rem;
     }
+    .internationnalisation {
+        left: 85%;
+        width: 15%;
+    }
     /*
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
@@ -542,9 +550,9 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
-    footer {
-        
-        background: red;
+    .internationnalisation {
+        left: 80%;
+        width: 20%;
     }
 }
 
@@ -565,6 +573,20 @@ span {
     }
     .portfolio h3 {
         overflow: overlay;
+    }
+    
+    .internationnalisation {
+        left: 70%;
+        width: 30%;
+    }
+
+    .internationnalisation button {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        overflow-x: hidden;
     }
     .footer {
         flex-direction: column-reverse;
