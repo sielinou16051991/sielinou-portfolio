@@ -374,6 +374,30 @@ span {
     cursor: pointer;
 }
 
+.interrnationnalisation {
+    background: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 90%;
+    padding: 1rem 1rem 0rem 1rem;
+    width: 10%;
+    height: 35px;
+    border-radius: 5px 5px 0 0;
+}
+
+.interrnationnalisation button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+.interrnationnalisation :nth-child(1) {
+    margin-bottom: .5rem;
+}
 .footer {
     display: flex;
     justify-content: space-between;

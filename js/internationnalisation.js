@@ -1,8 +1,20 @@
 function loadLanguage(lang) {
     console.log(lang);
+    document.addEventListener('DOMContentLoaded', function () {
+        let fr_en = document.getElementById('fr_en');
+        console.log(lang);
+        if (lang == 'en') {
+            console.log(lang);
+            fr_en.innerHTML = `<button class="" onclick="changeLanguage('fr')" id="Français">Français</button>`
+        } else if (lang == 'fr') {
+            console.log(lang);
+            fr_en.innerHTML = `<button class="" onclick="changeLanguage('en')" id="English">English</button>`;
+        }
+    });
     return fetch(`public/i18n/${lang}.json`)
         .then(response => response.json());
 }
+
     // Mettre à jour le contenu de la page en fonction de la langue
 function updateContent(data) {
     console.log(data);
@@ -51,11 +63,20 @@ function updateContent(data) {
     document.getElementById('PROFESSIONNEL').innerText = data.PROFESSIONNEL;
     document.getElementById('CONTACT_FORM').innerText = data.CONTACT_FORM;
     document.getElementById('Me_').innerText = data.Me_;
-    document.getElementById('Français').innerText = data.Français;
-    document.getElementById('English').innerText = data.English;
+    //document.getElementById('Français').innerText = data.Français;
+    //document.getElementById('English').innerText = data.English;
 }
                 // Changer la langue et mettre à jour le contenu
                 function changeLanguage(lang) {
+                    let fr_en = document.getElementById('fr_en');
+                    console.log(lang);
+                    if (lang == 'en') {
+                        console.log(lang);
+                        fr_en.innerHTML = `<button class="" onclick="changeLanguage('fr')" id="Français">Français</button>`
+                    } else if (lang == 'fr') {
+                        console.log(lang);
+                        fr_en.innerHTML = `<button class="" onclick="changeLanguage('en')" id="English">English</button>`;
+                    }
                     loadLanguage(lang)
                         .then(data => updateContent(data))
                         .catch(error => console.error('Erreur de chargement du fichier JSON', error));
