@@ -27,7 +27,7 @@ function updateContent(data) {
     document.getElementById('NOM_PRENOM').innerText = data.NOM_PRENOM;
     //document.getElementById('JE_SUIS').innerText = data.JE_SUIS;
     document.getElementById('RESAU_SOCIAL').innerText = data.RESAU_SOCIAL;
-    document.getElementById('CV').innerText = data.CV;
+    //document.getElementById('CV').innerText = data.CV;
     document.getElementById('Apropos_2').innerText = data.Apropos_2;
     //console.log('moi', document.querySelector("#MOI"));
     document.getElementById('MOI').innerText = data.MOI;

@@ -157,6 +157,10 @@ span {
     box-shadow: none;
 }
 
+#CV {
+    margin-right: 1.5rem;
+}
+
 .about {
     display: flex;
     justify-content: center;
