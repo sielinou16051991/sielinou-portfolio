@@ -63,3 +63,19 @@ window.onscroll = () => {
         backDelay: 1000,
         loop: true,
     });
+
+     /*=======================      see more    ====================*/
+     /*
+    function toggleText() {
+        var textContainer = document.querySelector('.about-content');
+        var buttonText = document.querySelector('.btn-VOIR_PLUS_1');
+
+        if (textContainer.style.display === 'none') {
+            textContainer.style.display = 'block';
+            buttonText.innerText = 'Voir moins';
+        } else {
+            textContainer.style.display = 'none';
+            buttonText.innerText = 'Voir plus';
+        }
+    }
+    */
