@@ -13,13 +13,13 @@ function updateContent(data) {
     document.getElementById('Contact_1').innerText = data.Contact_1;
     document.getElementById('SALUT').innerText = data.SALUT;
     document.getElementById('NOM_PRENOM').innerText = data.NOM_PRENOM;
-    document.getElementById('JE_SUIS').innerText = data.JE_SUIS;
+    //document.getElementById('JE_SUIS').innerText = data.JE_SUIS;
     document.getElementById('RESAU_SOCIAL').innerText = data.RESAU_SOCIAL;
     document.getElementById('CV').innerText = data.CV;
     document.getElementById('Apropos_2').innerText = data.Apropos_2;
     //console.log('moi', document.querySelector("#MOI"));
     document.getElementById('MOI').innerText = data.MOI;
-    document.getElementById('Frontend_Developer').innerText = data.Frontend_Developer;
+   // document.getElementById('Frontend_Developer').innerText = data.Frontend_Developer;
     document.getElementById('DEMARQUATION').innerText = data.DEMARQUATION;
     document.getElementById('PARCOURS').innerText = data.PARCOURS;
     document.getElementById('VOIR_PLUS_1').innerText = data.VOIR_PLUS_1;
