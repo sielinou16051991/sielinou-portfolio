@@ -1,6 +1,6 @@
 function loadLanguage(lang) {
     console.log(lang);
-    return fetch(`../i18n/${lang}.json`)
+    return fetch(`public/i18n/${lang}.json`)
         .then(response => response.json());
 }
     // Mettre à jour le contenu de la page en fonction de la langue
