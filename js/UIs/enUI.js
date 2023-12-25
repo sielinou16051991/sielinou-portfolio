@@ -52,22 +52,22 @@ function genereCodeHTMLEn(){
             </div>
             <!-- <h3 id="Frontend_Developer"></h3> --->
             <p id="DEMARQUATION">
-                I'm a young professional with a passion for my work, great organisational skills and the ability to adapt 
+                &nbsp; &nbsp; I'm a young professional with a passion for my work, great organisational skills and the ability to adapt 
                 easily to new situations. adapt easily to different different environments and determined to achieve my goals.
                 goals. I would like to to get involved in a new project within a dynamic and ambitious ambitious organisation
             </p>
             <p id="PARCOURS">
-            I'm a front-end developer with a master's degree in Information Systems and Software Engineering from the University 
-            of Yaoundé 1 in 2022. Since 8 August 2022, I've been part of the Advance-it team, an innovative company 
-            where I've had the opportunity to work on a number of large-scale projects. My achievements include management software 
-            such as "AURORE SIC" for schools, "AURORE HIS" for hospitals, and "DIGEST" for banking management, which are currently 
-            in production. Over the course of this experience, I have developed solid expertise in languages such as HTML5, Sass, 
-            Less and JavaScript. My preferred framework is Angular, and I've also mastered React as a secondary framework. In addition, 
-            I have acquired skills in designing printable reports using the reporting tool Jasper Report reporting tool. My career path 
-            has enabled me to become a versatile front-end developer, ready to take on new challenges. developer, ready to take on new 
-            challenges and bring creative solutions to the world of web world of web programming.
+                &nbsp; &nbsp; I'm a front-end developer with a master's degree in Information Systems and Software Engineering from the University 
+                of Yaoundé 1 in 2022. Since 8 August 2022, I've been part of the Advance-it team, an innovative company 
+                where I've had the opportunity to work on a number of large-scale projects. My achievements include management software 
+                such as "AURORE SIC" for schools, "AURORE HIS" for hospitals, and "DIGEST" for banking management, which are currently 
+                in production. Over the course of this experience, I have developed solid expertise in languages such as HTML5, Sass, 
+                Less and JavaScript. My preferred framework is Angular, and I've also mastered React as a secondary framework. In addition, 
+                I have acquired skills in designing printable reports using the reporting tool Jasper Report reporting tool. My career path 
+                has enabled me to become a versatile front-end developer, ready to take on new challenges. developer, ready to take on new 
+                challenges and bring creative solutions to the world of web world of web programming.
             </p>
-            <button class="btn btn-VOIR_PLUS_1" id="VOIR_PLUS_1" onclick="toggleText()">Read More</button>
+            <button class="btn btn-VOIR_PLUS_1" id="VOIR_PLUS_1" onclick="toggleText('READ_MORE')">Read More</button>
         </div>
     </section>
 
@@ -116,12 +116,12 @@ function genereCodeHTMLEn(){
     <section class="portfolio" id="portfolio">
         
         <div class="title-portfolio-container">
-            <h2 class="heading" id="Mes_dernier"> My last </h2>
+            <h2 class="heading" id="Mes_dernier"> My latest </h2>
             <h2><span id="Projets_1">Projects</span></h2>
         </div>
         <div class="title-portfolio-container">
-            <h3 class="heading" id="Mes_projets"> My projects </h3> 
-            <span id="Personnel"> Personnel </span>
+            <h3 class="heading" id="Mes_projets"> Personnal </h3>
+            <span id="Personnel"> projects </span> 
         </div>
 
         <div class="portfolio-container">
@@ -189,22 +189,39 @@ function genereCodeHTMLEn(){
             
         </div>
         
-        <form action="#">
+        <form action="#" id="form-contact">
             <div class="input-box">
-                <input type="text" id="FullName" placeholder="Full Name">
-                <input type="mail" id="EmailAddress" placeholder="Email Address">
+                <div class="input-box-helft">
+                    <input type="text" id="FullName" placeholder="Full Name">
+                    <label class="error" id="error-fullName">Please enter your full name</label>
+                </div>
+                <div class="input-box-helft">
+                    <input type="mail" id="EmailAddress" placeholder="Email Address">
+                    <label class="error" id="error-EmailAddress">Please enter your valid Email Address</label>
+                </div>
             </div>
             <div class="input-box">
-                <input type="number" id="MobileNumber" placeholder="Mobile Number">
-                <input type="text" id="EmailSubject" placeholder="Email Subject">
+                <div class="input-box-helft">
+                    <input type="number" id="MobileNumber" placeholder="Mobile Number">
+                    <label class="error" id="error-MobileNumber">Please enter your Please enter your Mobile Number</label>
+                </div>
+                <div class="input-box-helft">
+                    <input type="text" id="EmailSubject" placeholder="Email Subject">
+                    <label class="error" id="error-EmailSubject">Email Subject</label>
+                </div>
             </div>
-            <textarea name="" id="YourMessage" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="input-box-textarea">
+                <textarea name="" id="YourMessage" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <label class="error" id="error-YourMessage">Please enter your Please enter your Your Message</label>
+            </div>
             <input type="submit" onclick="SendEmail()" value="Send Message" class="btn">
         </form>
     </section>
 
     <div class="internationnalisation" id="fr_en">
         
+    </div>
+    <div class="inner-modal" id="innerModal">
         
     </div>
 

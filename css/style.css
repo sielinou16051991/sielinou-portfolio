@@ -30,7 +30,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 5rem 9% 2rem;
 }
 
 .header {
@@ -190,6 +190,10 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+.voir-plus {
+    margin-top: -10rem !important;
 }
 
 .services h2 {
@@ -354,8 +358,20 @@ span {
     flex-wrap: wrap;
 }
 
-.contact form .input-box input,
-.contact form textarea {
+.input-box-helft {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.input-box-textarea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact form .input-box .input-box-helft input,
+.contact form .input-box-textarea textarea {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
@@ -365,12 +381,32 @@ span {
     margin: .7rem 0;
 }
 
-.contact form .input-box input {
-    width: 49%;
+.contact form .input-box .input-box-helft input {
+    width: 100%;
 }
 
-.contact form textarea {
+.contact form .input-box-helft textarea {
     resize: none;
+}
+#error-fullName {
+    display: none;
+}
+#error-EmailAddress {
+    display: none;
+}
+#error-MobileNumber {
+    display: none;
+}
+#error-EmailSubject {
+    display: none;
+}
+#error-YourMessage {
+    display: none;
+}
+
+.error {
+    color: red;
+    text-align: start !important;
 }
 
 .contact form .btn {

@@ -68,6 +68,7 @@ function updateContent(data) {
 }
                 // Changer la langue et mettre à jour le contenu
                 function changeLanguage(lang) {
+                    localStorage.setItem('langue', lang);
                     /*
                     console.log(lang);
                     if (lang == 'en') {
@@ -83,6 +84,8 @@ function updateContent(data) {
                     if (lang == 'en') {
                         version_fr_or_en.innerHTML = genereCodeHTMLEn();
                         let fr_en = document.getElementById('fr_en');
+                        let Personnel = document.getElementById('Personnel');
+                        Personnel.style.marginRight = '1rem';
                         fr_en.innerHTML = `<button class="" onclick="changeLanguage('fr')" id="Français">Français</button>`
                     } else if (lang == 'fr') {
                         version_fr_or_en.innerHTML = genereCodeHTMLFr();

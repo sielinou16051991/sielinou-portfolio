@@ -54,13 +54,13 @@ function genereCodeHTMLFr() {
             </div>
             <!-- <h3 id="Frontend_Developer"></h3> --->
             <p id="DEMARQUATION">
-                Jeune professionnel passionné par son travail, doté d’un grand sens de l’organisation et
+                &nbsp; &nbsp; Jeune professionnel passionné par son travail, doté d’un grand sens de l’organisation et
                 m’adaptant facilement à différents environnements et faisant preuve de détermination dans 
                 la réalisation de mes objectifs. Je souhaite m’impliquer dans un nouveau projet au sein d’une
                 organisation dynamique et ambitieuse.
             </p>
             <p id="PARCOURS">
-                Je suis un développeur frontend avec une maîtrise en Système d'Information et
+                &nbsp; &nbsp; Je suis un développeur frontend avec une maîtrise en Système d'Information et
                 Génie Logiciel obtenue à l'Université de Yaoundé 1 en 2022. Depuis le 8 août 2022, je fais partie 
                 de l'équipe d'Advance-it, une entreprise innovante où j'ai eu l'opportunité de travailler sur des 
                 projets d'envergure. Parmi mes réalisations figurent des logiciels de gestion tels que "AURORE SIC" 
@@ -69,10 +69,9 @@ function genereCodeHTMLFr() {
                 expertise dans des langages tels que HTML5, Sass, Less et JavaScript. Mon framework de prédilection 
                 est Angular, et j'ai également une maîtrise de React en tant que framework secondaire. De plus, j'ai 
                 acquis des compétences dans la conception d'états imprimables grâce à l'outil de reporting Jasper Report. 
-                Mon parcours professionnel m'a permis de devenir un développeur frontend polyvalent, prêt à relever de 
-                nouveaux défis et à apporter des solutions créatives dans le monde de la programmation web.
+                Mon parcours professionnel m'a permis de devenir un ...
             </p>
-            <button class="btn btn-VOIR_PLUS_1" id="VOIR_PLUS_1" onclick="toggleText()">Voir plus</button>
+            <button class="btn btn-VOIR_PLUS_1" id="VOIR_PLUS_1" onclick="toggleText('VOIR_PLUS')">Voir plus</button>
         </div>
     </section>
 
@@ -197,22 +196,39 @@ function genereCodeHTMLFr() {
             
         </div>
         
-        <form action="#">
+        <form action="#" id="form-contact">
             <div class="input-box">
-                <input type="text" id="FullName" placeholder="Nom(s)">
-                <input type="mail" id="EmailAddress" placeholder="Email">
+                <div class="input-box-helft">
+                    <input type="text" id="FullName" placeholder="Nom(s)">
+                    <label class="error" id="error-fullName">Veillez renseigner votre nom</label>
+                </div>
+                <div class="input-box-helft">
+                    <input type="mail" id="EmailAddress" placeholder="Email">
+                    <label class="error" id="error-EmailAddress">Veillez renseigner votre email valide</label>
+                </div>
             </div>
             <div class="input-box">
-                <input type="number" id="MobileNumber" placeholder="Tel">
-                <input type="text" id="EmailSubject" placeholder="Objet">
+                <div class="input-box-helft">
+                    <input type="number" id="MobileNumber" placeholder="Tel">
+                    <label class="error" id="error-MobileNumber">Veillez renseigner votre numéro de téléphone</label>
+                </div>
+                <div class="input-box-helft">
+                    <input type="text" id="EmailSubject" placeholder="Objet">
+                    <label class="error" id="error-EmailSubject">Veillez renseigner l'objet de votre message</label>
+                </div>
             </div>
-            <textarea name="" id="YourMessage" cols="30" rows="10" placeholder="Votre message"></textarea>
+            <div class="input-box-textarea">
+                <textarea name="" id="YourMessage" cols="30" rows="10" placeholder="Votre message"></textarea>
+                <label class="error" id="error-YourMessage">Veillez renseigner votre message</label>
+            </div>
             <input type="submit" onclick="SendEmail()" value="Send Message" class="btn">
         </form>
     </section>
 
     <div class="internationnalisation" id="fr_en">
         
+    </div>
+    <div class="inner-modal" id="innerModal">
         
     </div>
 

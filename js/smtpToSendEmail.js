@@ -1,11 +1,79 @@
 function SendEmail() {
     console.log('Sending email');
+    let contentModal = document.getElementById('innerModal');
     let name = document.getElementById('FullName').value;
     let address = document.getElementById('EmailAddress').value;
     let number = document.getElementById('MobileNumber').value;
     let subject = document.getElementById('EmailSubject').value;
     let message = document.getElementById('YourMessage').value;
+
+    setTimeout(function() {
+      if (name == '') {
+        const errorFullName = document.getElementById('error-fullName');
+        errorFullName.style.display = 'block';
+        document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
+        return;
+      }
+      if (subject == '') {
+        const errorSubject = document.getElementById('error-EmailSubject');
+        errorSubject.style.display = 'block';
+        document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
+        return;
+      }
+      if (address == '') {
+        const errorAddress = document.getElementById('error-EmailAddress');
+        errorAddress.style.display = 'block';
+        document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
+        return;
+      }
     
+      let emailInput = document.getElementById('EmailAddress');
+      const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(address);
+      console.log(isValid);
+    if(!isValid) {
+      console.log(isValid);
+      const errorAddress = document.getElementById('error-EmailAddress');
+      errorAddress.style.display = 'block';
+      document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
+      // emailInput.setCustomValidity('ERROR: email invalide');
+        return;
+  
+    }
+    }, 1000);
+
+    let data = {
+      name: name,
+      address: address,
+      number: number,
+      subject: subject
+    }
+
+    contentModal.innerHTML = schowModal(data);
+    let modal = document.getElementById('maModal');
+    modal.style.display = 'block';
+
+    /* si on click sur ok, la modale se ferme*/
+let okModal = document.getElementById('ok-modal');
+okModal.addEventListener("click",
+    function() {
+     modal.style.display = 'none';
+    })
+    
+         /* si on click sur la croix, la modale se ferme*/
+    let fermerModal = document.getElementById('fermerModal');
+    fermerModal.addEventListener("click",
+         function() {
+          modal.style.display = 'none';
+         })
+
+         /* si on click hors de la modale elle se ferme*/
+    window.addEventListener("click",
+         function(event) {
+          if(event.target == modal) {
+            modal.style.display = 'none';
+          }
+         })
+
     let body = "Nom: " + name + "</br> Email: " + address + "</br> Tel: " + number + "</br> Objet: " + subject + "</br> Message:" + message;
     console.log(body);
     
