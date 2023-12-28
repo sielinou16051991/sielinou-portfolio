@@ -12,6 +12,7 @@
 
     <!--    custom css    -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modalStyle.css">
 </head>
 
 <body>
@@ -20,214 +21,22 @@
             <div class="cover cover-right"></div>
         </div>
         -->
-    <!-- Header design -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <!-- <i class="bx bx-x" id="bx-x" ></i> -->
-
-        <nav class="navbar">
-            <a href="#home" class="active" id="Accueil"></a>
-            <a href="#about" id="Apropos_1"></a>
-            <a href="#services" id="Services_1"></a>
-            <a href="#portfolio" id="Portfolio_1"></a>
-            <a href="#contact" id="Contact_1"></a>
-        </nav>
-    </header>
-
-    <!--    home section    -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3 id="SALUT"></h3>
-            <h1 id="NOM_PRENOM"></h1>
-            <h3 class="home-functions">Et je suis un <span class="multiple-text"></span> </h3>
-            
-            <p id="RESAU_SOCIAL">
-            </p>
-            <div class="social-media">
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-twitter"></i></a>
-                <a href="#"><i class="bx bxl-instagram"></i></a>
-                <a href="#"><i class="bx bxl-linkedin"></i></a>
-            </div>
-            <a href="public/pdf/CV-ERIC.pdf" class="btn" id="CV" download="SIELINOU_1605.pdf" target="_blank">CV<i class="bx bx-download" ></i></a>
-            <a href="public/pdf/CV-ERIC.pdf" class="btn" id="CV_preview" target="_blank">CV<i class="bx bx-low-vision"></i></a>
-        </div>
-        <div class="home-img">
-            <img src="images/home-img.png" alt="">
-        </div>
-    </section>
-
-    <!--    about section design    -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about-img.jpg" alt="">
-        </div>
-        <div class="about-content">
-            <div class="title-portfolio-container">
-                <h2 class="heading" id="Apropos_2"> </h2>
-                <span id="MOI"></span>
-            </div>
-            <!-- <h3 id="Frontend_Developer"></h3> --->
-            <p id="DEMARQUATION">
-
-            </p>
-            <p id="PARCOURS">
-
-            </p>
-            <button class="btn btn-VOIR_PLUS_1" id="VOIR_PLUS_1" onclick="toggleText()"></button>
-        </div>
-    </section>
-
-    <!--    service section design    -->
-    <section class="services" id="services">
-        <div class="title-portfolio-container">
-            <h2 class="heading" id="Mes"> </h2>
-            <h2><span id="Services_2"></span></h2>
-        </div>
-        <div class="services-container">
-
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3 id="Developement_Web"></h3>
-                <p id="JEUNE_DEV_1">
-
-                </p>
-                <a href="#" class="btn" id="VOIR_PLUS_2"></a>
-            </div>
+    <div id="version_fr_or_en">
 
 
-            <div class="services-box">
-                <i class="bx bxs-paint"></i>
-                <h3 id="Graphiste"></h3>
-                <p id="DEBUTANT">
-
-                </p>
-                <a href="#" class="btn" id="VOIR_PLUS_3"></a>
-            </div>
-
-
-            <div class="services-box">
-                <i class="bx bx-bar-chart-alt"></i>
-                <h3 id="UI_UX"></h3>
-                <p id="JEUNE_TALENT">
-
-                </p>
-                <a href="#" class="btn" id="VOIR_PLUS_4"></a>
-            </div>
-
-        </div>
-    </section>
-
-    <!--    portfolio section design    -->
-
-    <section class="portfolio" id="portfolio">
-        
-        <div class="title-portfolio-container">
-            <h2 class="heading" id="Mes_dernier"> </h2>
-            <h2><span id="Projets_1"></span></h2>
-        </div>
-        <div class="title-portfolio-container">
-            <h3 class="heading" id="Mes_projets"> </h3> 
-            <span id="Personnel"></span>
-        </div>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/img-portfolio/portfolio_booki.png" alt="">
-                <div class="portfolio-layer">
-                    <h4 id="Web_Design_1"></h4>
-                    <p id="HEBERGEMENT">
-
-                    </p>
-                    <a href="https://sielinou16051991.github.io" target="_blank"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/img-portfolio/portfolio_ohmyfood.png" alt="">
-                <div class="portfolio-layer">
-                    <h4 id="Web_Design_2"></h4>
-                    <p id="RESTEAURANT">
-
-                    </p>
-                    <a href="https://sielinou16051991.github.io/projet2HtmlCss" target="_blank"><i
-                            class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/img-portfolio/portfolio_photographes.png" alt="">
-                <div class="portfolio-layer">
-                    <h4 id="Web_Design_3"></h4>
-                    <p id="PHOTOGRAPHE">
-
-                    </p>
-                    <a href="https://sielinou16051991.github.io/projet-3-html-css-js" target="_blank"><i
-                            class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/img-portfolio/portfolio_les_petits_plats.png" alt="">
-                <div class="portfolio-layer">
-                    <h4 id="Web_Design_4"></h4>
-                    <p id="PETITS_PLATS">
-
-                    </p>
-                    <a href="https://sielinou16051991.github.io/projet-4-js-bootstrapp-5" target="_blank"><i
-                            class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="title-portfolio-container">
-            <h3 class="heading" id="PROJET"> </h3>
-            <span id="PROFESSIONNEL"></span>
-        </div>
-        <div class="portfolio-container">
-
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        
-        <div class="title-portfolio-container">
-            <h2 class="heading" id="CONTACT_FORM"> </h2>
-            <h2><span id="Me_"></span></h2>
-            
-        </div>
-        
-        <form action="#">
-            <div class="input-box">
-                <input type="text" id="FullName" placeholder="Full Name">
-                <input type="mail" id="EmailAddress" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" id="MobileNumber" placeholder="Mobile Number">
-                <input type="text" id="EmailSubject" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="YourMessage" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" onclick="SendEmail()" value="Send Message" class="btn">
-        </form>
-    </section>
-
-    <div class="internationnalisation" id="fr_en">
-        
-        
     </div>
 
-    <!--    footer design   -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by Siélinou Noubissié Eric Romuald | All Rights Reserved.</p>
-        </div>
+    <!--    modal  -->
+    <script src="js/UIs/modalFormUi.js"></script>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
-    </footer>
-
+    <!--    Internationnalisation  -->
+    <script src="js/UIs/enUI.js"></script>
+    <script src="js/UIs/frUI.js"></script>
+    <script src="js/internationnalisation.js"></script>
+    
+    <!--    Voir plus ou moins  -->
+    <script src="js/UIs/aboutUI.js"></script>
+    
     <!--    Scroll reveal : https://scrollrevealjs.org/guide/hello-world.html-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -235,9 +44,6 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src="js/script.js"></script>
-
-    <!--    Internationnalisation  -->
-    <script src="js/internationnalisation.js"></script>
 
     <!--    send mail use smtp.js  -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>

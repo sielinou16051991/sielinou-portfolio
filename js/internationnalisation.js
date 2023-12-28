@@ -68,7 +68,8 @@ function updateContent(data) {
 }
                 // Changer la langue et mettre à jour le contenu
                 function changeLanguage(lang) {
-                    let fr_en = document.getElementById('fr_en');
+                    localStorage.setItem('langue', lang);
+                    /*
                     console.log(lang);
                     if (lang == 'en') {
                         console.log(lang);
@@ -77,9 +78,26 @@ function updateContent(data) {
                         console.log(lang);
                         fr_en.innerHTML = `<button class="" onclick="changeLanguage('en')" id="English">English</button>`;
                     }
+                    */
+                    console.log(lang);
+                    let version_fr_or_en = document.getElementById('version_fr_or_en');
+                    if (lang == 'en') {
+                        version_fr_or_en.innerHTML = genereCodeHTMLEn();
+                        let fr_en = document.getElementById('fr_en');
+                        let Personnel = document.getElementById('Personnel');
+                        Personnel.style.marginRight = '1rem';
+                        fr_en.innerHTML = `<button class="" onclick="changeLanguage('fr')" id="Français">Français</button>`
+                    } else if (lang == 'fr') {
+                        version_fr_or_en.innerHTML = genereCodeHTMLFr();
+                        let fr_en = document.getElementById('fr_en');
+                        fr_en.innerHTML = `<button class="" onclick="changeLanguage('en')" id="English">English</button>`;
+                    } 
+                    /*
                     loadLanguage(lang)
                         .then(data => updateContent(data))
                         .catch(error => console.error('Erreur de chargement du fichier JSON', error));
+                        */
+                        
                 }
 // Chargement initial en français
     changeLanguage('fr');
