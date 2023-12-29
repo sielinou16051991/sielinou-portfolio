@@ -57,15 +57,14 @@ function genereCodeHTMLEn(){
                 goals. I would like to to get involved in a new project within a dynamic and ambitious ambitious organisation
             </p>
             <p id="PARCOURS">
-                &nbsp; &nbsp; I'm a front-end developer with a master's degree in Information Systems and Software Engineering from the University 
-                of Yaoundé 1 in 2022. Since 8 August 2022, I've been part of the Advance-it team, an innovative company 
-                where I've had the opportunity to work on a number of large-scale projects. My achievements include management software 
-                such as "AURORE SIC" for schools, "AURORE HIS" for hospitals, and "DIGEST" for banking management, which are currently 
-                in production. Over the course of this experience, I have developed solid expertise in languages such as HTML5, Sass, 
-                Less and JavaScript. My preferred framework is Angular, and I've also mastered React as a secondary framework. In addition, 
-                I have acquired skills in designing printable reports using the reporting tool Jasper Report reporting tool. My career path 
-                has enabled me to become a versatile front-end developer, ready to take on new challenges. developer, ready to take on new 
-                challenges and bring creative solutions to the world of web world of web programming.
+            &nbsp; &nbsp; I'm a front-end developer with a master's degree in Information Systems and Software Engineering from the University 
+            of Yaoundé 1 in 2022. Since 8 August 2022, I've been part of the Advance-it team, an innovative company 
+            where I've had the opportunity to work on a number of large-scale projects. My achievements include management software 
+            such as "AURORE SIC" for schools, "AURORE HIS" for hospitals, and "DIGEST" for banking management, which are currently 
+            in production. Over the course of this experience, I have developed solid expertise in languages such as HTML5, Sass, 
+            Less and JavaScript. My preferred framework is Angular, and I've also mastered React as a secondary framework. In addition, 
+            I have acquired skills in designing printable reports using the reporting tool Jasper Report reporting tool. My career path 
+            has enabled me to become a ...
             </p>
             <button class="btn btn-VOIR_PLUS_1" id="VOIR_PLUS_1" onclick="toggleText('READ_MORE')">Read More</button>
         </div>
