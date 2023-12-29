@@ -50,6 +50,9 @@
     justify-content: flex-end;
 
 }
+.btn-modal {
+    margin-top: 2rem;
+}
 @media (max-width: 991px) {
     .modal-container-message {
         max-height: 400px;
