@@ -9,9 +9,9 @@ function schowModal(data) {
                         &times;
                     </span>
                     <div class="modal-container-title">
-                        <h2 >
+                        <h4 >
                            Remerciements pour prise de contact
-                        </h2>
+                        </h4>
                     </div>
                         <hr>
                     <div class="modal-container-message">
@@ -45,9 +45,9 @@ function schowModal(data) {
                         &times;
                     </span>
                     <div class="modal-container-title">
-                        <h2 >
+                        <h4 >
                            Thank you for contacting us
-                        </h2>
+                        </h4>
                     </div>
                         <hr>
                     <div class="modal-container-message">
