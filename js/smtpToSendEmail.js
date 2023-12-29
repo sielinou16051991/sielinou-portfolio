@@ -1,11 +1,18 @@
 function SendEmail() {
     console.log('Sending email');
-    let contentModal = document.getElementById('innerModal');
-    let name = document.getElementById('FullName').value;
-    let address = document.getElementById('EmailAddress').value;
-    let number = document.getElementById('MobileNumber').value;
-    let subject = document.getElementById('EmailSubject').value;
-    let message = document.getElementById('YourMessage').value;
+    let contentModal = '';
+    let name = '';
+    let address = '';
+    let number = '';
+    let subject = '';
+    let message = '';
+
+     contentModal = document.getElementById('innerModal');
+     name = document.getElementById('FullName').value;
+     address = document.getElementById('EmailAddress').value;
+     number = document.getElementById('MobileNumber').value;
+     subject = document.getElementById('EmailSubject').value;
+     message = document.getElementById('YourMessage').value;
 
     setTimeout(function() {
       if (name == '') {
@@ -13,21 +20,31 @@ function SendEmail() {
         errorFullName.style.display = 'block';
         document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
         return;
+      }else {
+        const errorFullName = document.getElementById('error-fullName');
+        errorFullName.style.display = 'block';
       }
       if (subject == '') {
         const errorSubject = document.getElementById('error-EmailSubject');
         errorSubject.style.display = 'block';
         document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
         return;
+      }else {
+        const errorSubject = document.getElementById('error-EmailSubject');
+        errorSubject.style.display = 'block';
       }
       if (address == '') {
         const errorAddress = document.getElementById('error-EmailAddress');
         errorAddress.style.display = 'block';
         document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
         return;
+      }else {
+        const errorAddress = document.getElementById('error-EmailAddress');
+        errorAddress.style.display = 'block';
       }
     
-      let emailInput = document.getElementById('EmailAddress');
+      let emailInput = '';
+       emailInput = document.getElementById('EmailAddress');
       const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(address);
       console.log(isValid);
     if(!isValid) {
@@ -38,6 +55,10 @@ function SendEmail() {
       // emailInput.setCustomValidity('ERROR: email invalide');
         return;
   
+    }else {
+      const errorAddress = document.getElementById('error-EmailAddress');
+      errorAddress.style.display = 'block';
+      return;
     }
     }, 1000);
 
