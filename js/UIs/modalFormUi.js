@@ -10,7 +10,7 @@ function schowModal(data) {
                         </span>
                         <div class="modal-container-title">
                          <h2 >
-                           Remerciements pour votre prise de contact
+                           Remerciements pour prise de contact
                          </h2>
                         </div>
                         <hr>
@@ -20,9 +20,7 @@ function schowModal(data) {
                          &nbsp; &nbsp;Je tenais à vous remercier chaleureusement pour avoir pris le temps de me contacter via mon
                          portfolio. 
                          Votre message ayant pour objet <b>"${data.subject}"</b> a été reçu avec gratitude.</br>
-                         &nbsp; &nbsp; Votre intéret pour <b>"${data.subject}"</b> est précieux pour moi. je vais examiner
-                         soigneusement chaque détail de votre message et je m'engage à vous répondre dans les plus brefs délais,
-                         utilisant l'adresse e-mail que vous avez aimablement partagée: ${data.email}.</br>
+                         &nbsp; &nbsp; je vous contacterais via: ${data.email}.</br>
                          &nbsp; &nbsp; Votre contact est un privilège et je suis impatient de poursuivre nos échanges.</br></br>
     
                          &nbsp; &nbsp;
