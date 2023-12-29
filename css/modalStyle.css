@@ -64,5 +64,6 @@
     .modal-container-message {
         max-height: 200px;
         background: red;
+        overflow-y: scroll;
     }
 }
