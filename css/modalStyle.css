@@ -61,8 +61,11 @@
     }
 }
 @media (max-width: 450px) {
+    .modal {
+        margin-top: 4rem;
+    }
     .modal-container-message {
-        max-height: 300px;
+        max-height: 250px;
         background: red;
         overflow-y: scroll;
     }
