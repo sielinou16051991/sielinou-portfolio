@@ -6,60 +6,61 @@ function SendEmail() {
     let number = '';
     let subject = '';
     let message = '';
-
      contentModal = document.getElementById('innerModal');
      name = document.getElementById('FullName').value;
      address = document.getElementById('EmailAddress').value;
      number = document.getElementById('MobileNumber').value;
      subject = document.getElementById('EmailSubject').value;
      message = document.getElementById('YourMessage').value;
+     
+    let errorFullName = document.getElementById('error-fullName');
+    let errorSubject = document.getElementById('error-EmailSubject');
+    let errorAddress = document.getElementById('error-EmailAddress');
+    errorFullName.style.display = 'none';
+    errorSubject.style.display = 'none';
+    errorAddress.style.display = 'none';
+    
+    let isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(address);
+    let emailAddress = document.getElementById('EmailAddress');
 
     setTimeout(function() {
       if (name == '') {
-        const errorFullName = document.getElementById('error-fullName');
         errorFullName.style.display = 'block';
         document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
         return;
       }else {
-        const errorFullName = document.getElementById('error-fullName');
-        errorFullName.style.display = 'block';
+        errorFullName.style.display = 'none';
       }
       if (subject == '') {
-        const errorSubject = document.getElementById('error-EmailSubject');
         errorSubject.style.display = 'block';
         document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
         return;
       }else {
-        const errorSubject = document.getElementById('error-EmailSubject');
-        errorSubject.style.display = 'block';
+        errorSubject.style.display = 'none';
       }
       if (address == '') {
-        const errorAddress = document.getElementById('error-EmailAddress');
         errorAddress.style.display = 'block';
         document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
         return;
-      }else {
-        const errorAddress = document.getElementById('error-EmailAddress');
-        errorAddress.style.display = 'block';
+      }else {  
+        errorAddress.style.display = 'none';
+        console.log(isValid);
+        emailAddress.addEventListener('input', 
+          function(event) {
+            if(!isValid) {
+              console.log(isValid);
+              document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
+              emailAddress.setCustomValidity('ERROR: email invalide');
+                return;
+            }else {
+              emailAddress.setCustomValidity('');
+              return;
+            }
+          }
+        
+        )
       }
-    
-      let emailInput = '';
-       emailInput = document.getElementById('EmailAddress');
-      const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(address);
-      console.log(isValid);
-    if(!isValid) {
-      console.log(isValid);
-      const errorAddress = document.getElementById('error-EmailAddress');
-      errorAddress.style.display = 'block';
-      document.getElementById('form-contact').scrollIntoView({ behavior: 'smooth'});
-      // emailInput.setCustomValidity('ERROR: email invalide');
-        return;
-  
-    }else {
-      const errorAddress = document.getElementById('error-EmailAddress');
-      errorAddress.style.display = 'block';
-      return;
-    }
+
     }, 1000);
 
     let data = {
@@ -71,7 +72,12 @@ function SendEmail() {
 
     contentModal.innerHTML = schowModal(data);
     let modal = document.getElementById('maModal');
-    modal.style.display = 'block';
+    modal.style.display = 'none';
+    if(name !== '' && subject !== '' && isValid) {
+      modal.style.display = 'block';
+    } else {
+      modal.style.display = 'none';
+    }
 
     /* si on click sur ok, la modale se ferme*/
 let okModal = document.getElementById('ok-modal');
