@@ -184,7 +184,17 @@ function genereCodeHTMLFr() {
             <span id="PROFESSIONNEL"> Professionnel </span>
         </div>
         <div class="portfolio-container">
-
+        <div class="portfolio-box">
+            <img src="images/img-portfolio/portfolio_les_petits_plats.png" alt="">
+            <div class="portfolio-layer">
+                <h4 > Voir plus </h4>
+                <p >
+                    AURORE SIS
+                </p>
+                <a href="https://pixel.cm/advance-it/products-and-services/" target="_blank"><i
+                        class="bx bx-link-external"></i></a>
+            </div>
+        </div>
         </div>
     </section>
 
