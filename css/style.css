@@ -272,7 +272,7 @@ span {
 
 
 .portfolio-container .portfolio-box {
-    flex: 1 1 30rem;
+    /* flex: 1 1 30rem; */
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -282,7 +282,7 @@ span {
 
 .portfolio-box {
     height: 250px;
-    width: 20%;
+    width: 30%;
 }
 
 .portfolio-box img {
